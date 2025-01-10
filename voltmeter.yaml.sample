@@ -112,9 +112,8 @@ sensor:
     name: "Uptime Sensor"      
 
 external_components:
-  - source:
-      type: local
-      path: local_components
+  - source: github://flicker581/esphome_adc_rms
+    components: [adc_rms]
 
 switch:
   - platform: restart
